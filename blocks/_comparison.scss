@@ -1,0 +1,57 @@
+.comparison{
+    height: 602px;
+    margin-bottom: 80px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media (max-width: 376px) {
+        margin-bottom: 50px;
+        height: 500px;
+    }
+}
+.tab-colomn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 768px) {
+        margin: auto;
+    }
+}
+.tab{
+    display: flex;
+    gap: 40px;
+}
+.tab-header{
+    background: linear-gradient(356deg, #4271df 0%, #789cf1 100%);
+    border-radius: 30px;
+    padding: 7px;
+    @media (max-width: 1127px) {
+        font-size: 25px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 20px;
+    }
+}
+.tab-content{
+    border-radius: 15px;
+    background: linear-gradient(356deg, #4271df 0%, #789cf1 100%);
+}
+li{
+    margin: 0 30px 15px 20px;
+}
+.hide{
+    display: none;
+}
+.active{
+    box-shadow: 0 6px 21px 0 rgba(104, 130, 245, 0.67);
+    background: #fff;
+    color: #243976;
+}
+.img-boy-one{
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

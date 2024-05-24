@@ -1,0 +1,73 @@
+.accordion{
+    margin-bottom: 80px;
+    @media (max-width: 376px) {
+        margin-bottom: 50px;
+    }
+}
+.accordion-head{
+    cursor: pointer;
+    border-radius: 25px;
+    height: 80px;
+    background: #eff2fd;
+    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 40px 0 0 58px;
+    @media (max-width: 376px) {
+        font-size: 18px;
+        padding-left: 15px;
+        max-width: 280px;
+        margin: auto;
+    }
+}
+.accordion-block{
+    max-height: 0;
+	opacity: 0;
+	transition: all 0.3s ease-out;
+	overflow: hidden;
+    border-radius: 25px;
+    padding: 44px 0 10px 58px;
+    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #eff2fd;
+    margin-bottom: 30px;
+    @media (max-width: 376px) {
+        font-size: 18px;
+        padding-left: 15px;
+        max-width: 280px;
+        margin: 10px auto 30px;
+    }
+}
+.accordion-text{
+    margin-bottom: 32px;
+    width: 917px;
+    @media (max-width: 376px) {
+        font-size: 12px;
+        padding-left: 15px;
+        max-width: 235px;
+    }
+}
+li{
+    margin-bottom: 2px;
+    @media (max-width: 376px) {
+        font-size: 12px;
+        padding-left: 15px;
+        max-width: 235px;
+    }
+}
+.accordion-block.active-content {
+	opacity: 1;
+	overflow: visible;
+}
+.accordion-head.active-p + .accordion-block {
+	display: block;
+}
+
+.accordion-head.active-style {
+	color: #2c3878;
+	font-weight: 900;
+}
+p{
+    @media (max-width: 376px) {
+        font-size: 12px;
+        padding-left: 15px;
+        max-width: 235px;
+    }
+}

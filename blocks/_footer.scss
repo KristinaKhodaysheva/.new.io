@@ -1,0 +1,139 @@
+.footer{
+    background: #eff2fd;
+    @media (max-width: 768px) {
+        height: 360px;
+    }
+    @media (max-width: 376px) {
+        height: 630px;
+    }
+    &__item-logo{
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        align-items: self-start;
+    }
+    &__subtitle{
+        margin-bottom: 20px;
+    }
+    &__item-net, &__item-doc, &__item-class, &__item-logo{
+        margin-top: 40px;
+    }
+    &__net{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    &__class{
+        margin-bottom: 10px;
+    }
+}
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 376px) {
+        flex-direction: column;
+        height: 630px;
+    }
+}
+.adres, .tel{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+.tel{
+    @media (max-width: 768px) {
+        position: relative;
+        top: 100px;
+        right: 30px;
+     }
+     @media (max-width: 376px) {
+        position: relative;
+        top: 0;
+        left: 0;
+     }
+}
+.adres{
+    margin: 40px 0 6px;
+    @media (max-width: 768px) {
+        position: relative;
+        top: 150px;
+        right: 400px;
+     }
+     @media (max-width: 376px) {
+        position: relative;
+        top: 0;
+        left: 0;
+     }
+
+}
+.logo-footer{
+    @media (max-width: 768px) {
+        max-width: 170px;
+     }
+    @media (max-width: 376px) {
+       max-width: 120px;
+    }
+}
+.text{
+    @media (max-width: 768px) {
+        position: relative;
+        bottom: -100px;
+        left: 300px;
+        text-align: center;
+        margin: auto;
+        max-width: 250px;
+     }
+    @media (max-width: 376px) {
+       position: relative;
+       bottom: -400px;
+       left: 0;
+       text-align: center;
+       margin: auto;
+    }
+}
+.footer__item-class{
+    @media (max-width: 768px) {
+        position: relative;
+        left: 70px;
+    }
+    @media (max-width: 376px) {
+        position: relative;
+        bottom: 150px;
+        left: 0;
+     }
+}
+.footer__item-doc{
+    @media (max-width: 768px) {
+        position: relative;
+        left: 140px;
+    }
+    @media (max-width: 376px) {
+        position: relative;
+        bottom: 340px;
+        left: 200px;
+        max-width: 118px;
+     }
+}
+.footer__item-net{
+    @media (max-width: 768px) {
+        position: relative;
+        left: 210px;
+    }
+    @media (max-width: 376px) {
+        position: relative;
+        bottom: 280px;
+        left: 0;
+     }
+}
+.footer__tel{
+    @media (max-width: 376px) {
+        position: relative;
+        bottom: 280px;
+     }
+}
+.youtube{
+    max-width: 34px;
+    height: 34px;
+}

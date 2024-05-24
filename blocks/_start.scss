@@ -1,0 +1,199 @@
+.start{
+    background: url(img/фон.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 770px;
+    margin-bottom: 60px;
+    @media (max-width: 1150px) {
+        background: url(img/bg.png);
+    }
+    @media (max-width: 768px) {
+        background: url(img/bg768.png);
+        height: 1122px;
+    }
+    @media (max-width: 376px) {
+        background: url(img/фон375.png);
+        height: 742px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 40px;
+    }
+}
+.header{
+    &__header-row{ 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 29px;
+    }
+    &__logo{
+        margin-right: auto;
+    }
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        border-top: 1px #e4e5ec solid;
+        margin-top: 40px;
+        align-items: center;
+    }
+    &__lists{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-right: auto;
+        padding: 0;
+    }
+    &__item{
+        list-style-type: none;
+    }
+}
+.entry{
+    border: none;
+    border-radius: 90px;
+    max-width: 222px;
+    height: 57px;
+    box-shadow: 0 6px 21px 0 rgba(104, 130, 245, 0.67);
+    background: linear-gradient(315deg, #864ff1 0%, #49b3f7 100%);
+    cursor: pointer;
+    @media (max-width: 376px) {
+        max-width: 230px;
+    }
+}
+.person-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__text{
+        margin-left: 8px;
+    }
+}
+.description{
+    max-width: 494px;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+        max-width: 510px;
+        text-align: center;
+    }
+    @media (max-width: 376px) {
+        font-size: 15px;
+        max-width: 280px;
+    }
+}
+.tagline{
+    margin-bottom: 37px;
+    @media (max-width: 768px) {
+        margin-bottom: 25px;
+    }
+    @media (max-width: 376px) {
+        font-size: 15px;
+        text-align: center;
+        max-width: 280px;
+    }
+}
+#header__btn-two{
+    width: 273px;
+    height: 67px;
+    margin-bottom: 15px;
+}
+.social-net{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 21px;
+}
+.hamb-filed {
+	display: none;
+}
+@media (max-width: 768px) {
+	.header__menu, .header__phone, .header__btn{
+		display: none;
+	}
+	
+	.hamb-filed {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	
+	.popup {
+		position: fixed;
+		top: 80px;
+        right: -100%;
+		z-index: 200;
+		display: flex;
+        flex-direction: column-reverse;
+		box-shadow: 5px 15px 40px 0 rgba(30, 35, 66, 0.15);
+        background: #eff2fd;
+		transition: 0.3s;
+        border-radius: 0 0 15px 15px;
+        max-width: 768px;
+        padding: 50px 0 50px;
+        align-items: center;
+        @media (max-width: 375px) {
+            max-width: 375px;
+        }
+	}
+	.popup.open {
+		left: 0;
+	}
+	.popup  .header__lists{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+        margin-top: 0;
+	}
+	.popup  .header__list > li {
+		margin: 15px 0;
+	}
+    .fa-bars:before{
+        content: url(img/menu.png);
+    }
+    .person-area-ham{
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 769px) {
+    .popup{
+        display: none;
+    }
+}
+.main{
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 480px;
+        align-items: center;
+    }
+    @media (max-width: 376px) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 220px;
+        align-items: center;
+    }
+}
+.title{
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+    @media (max-width: 376px) {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+}
+.logo-one{
+    @media (max-width: 376px) {
+        display: none;
+    }
+}
+.logo-two{
+    @media (min-width: 376px) {
+        display: none;
+    }
+    
+}

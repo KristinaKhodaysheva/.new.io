@@ -1,0 +1,95 @@
+.lesson{
+    background: url(img/фон3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 651px;
+    padding: 60px 0 0 60px;
+    margin-bottom: 80px;
+    @media (max-width: 1127px) {
+        padding: 60px 0 0 0;
+    }
+    @media (max-width: 1024px) {
+        background: url(img/Group\ 76.png);
+    }
+    @media (max-width: 768px) {
+        background: url(img/Group77.png);
+    }
+    @media (max-width: 376px) {
+        background: url(img/Group79.png);
+        background-size: cover;
+        height: 1020px;
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+.subtitle-left{
+    text-align: left;
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
+.lesson-colomn{
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    margin-bottom: 28px;
+    @media (max-width: 768px) {
+        align-items: start;
+        margin-left: 20px;
+    }
+    @media (max-width: 376px) {
+        align-items: center;
+    }
+    &__item{
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+        align-items: center;
+        max-width: 517px;
+        transition: transform 1s;
+        @media (max-width: 768px) {
+            max-width: 688px;
+        }
+    }
+    &__item:hover{
+        box-shadow: 5px 15px 40px 0 rgba(30, 35, 66, 0.15);
+        background: #fff;
+        border-radius: 25px;
+        transform: scale(1.1);
+    }
+    &__title{
+        text-align: left;
+        margin-bottom: 10px;
+        @media (max-width: 376px) {
+            font-size: 16px;
+        }
+    }
+    &__text{
+        @media (max-width: 376px) {
+            font-size: 14px;
+        }
+    }
+}
+.item-tree{
+    @media (max-width: 768px) {
+        max-width: 400px;
+    }
+}
+.item-two{
+    @media (max-width: 376px) {
+        margin-top: 330px;
+    }
+}
+.btn-lesson{
+    @media (max-width: 376px) {
+        margin: auto;
+        max-width: 230px;
+    }
+}
+.net-lesson{
+    @media (max-width: 376px) {
+        margin: auto;
+        max-width: 210px;
+    }
+}
